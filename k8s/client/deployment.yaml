@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yf-client-deployment
+  labels:
+    app: yf-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: yf-client
+  template:
+    metadata:
+      labels:
+        app: yf-client
+    spec:
+      containers:
+        - name: yf-client
+          image: cyator/yf-client:nginx-1.1
+          ports:
+            - containerPort: 80
