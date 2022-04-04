@@ -6,3 +6,4 @@ metadata:
     app: postgres
 data:
   POSTGRES_DB: yotefresh
+  PGDATA: /var/lib/postgresql/data/pgdata
