@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: yf-server
-          image: cyator/yf-server:main-0b5387a
+          image: cyator/yotefresh-server:0.0.0
           ports:
             - containerPort: 5000
           envFrom:
