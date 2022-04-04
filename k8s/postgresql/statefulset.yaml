@@ -25,9 +25,9 @@ spec:
             - secretRef:
                 name: postgres-secret
           volumeMounts:
-            - name: postgresvolume
-              mountPath: /var/lib/postgresql/data
-              subPath: postgres
+            - mountPath: /var/lib/postgresql/data
+              name: postgresvolume
+              subPath: data
       volumes:
         - name: postgresvolume
           persistentVolumeClaim:
