@@ -6,8 +6,6 @@ data:
   DB_HOST: postgres-service
   DB_PORT: '5432'
   DB_DATABASE: yotefresh
-  REDIS_PORT: '6379'
-  REDIS_HOST: redis-service
   ORIGIN: http://localhost
   BusinessShortCode: '174379'
   CallBackURL: yf-server-service
